@@ -1,0 +1,250 @@
+h1 {
+    color: #f98f8f;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+.logo {
+    width: 10%;
+    float: left;
+    height: 100%;
+}
+*/
+
+#logo {
+    position: absolute;
+}
+
+#logo_sprite {
+    float: left;
+    background-image: url(billeder/logo2.svg);
+    width: 42px;
+    height: 75px;
+    background-size: 600% 100%;
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+}
+
+.shade {
+    animation-name: shade_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(6);
+}
+
+@keyframes shade_kf {
+    0% {
+        background-position: 0% 0;
+    }
+
+    100% {
+        background-position: -600% 0;
+    }
+}
+
+
+.top {
+    height: 80px;
+    border-bottom: 1px #bbb solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.menu {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 23px;
+    height: 100%;
+}
+
+.menu a {
+    color: #ffcece;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+
+.menu a:hover {
+    color: #f98f8f;
+}
+
+
+/**********home******************/
+.splash {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    float: left;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #ffcece;
+    color: white;
+
+    text-align: left;
+    font-family: 'Lora',
+        serif;
+}
+
+
+.some {
+    position: fixed;
+    top: 94%;
+    left: 90%;
+    color: white;
+    font-size: 25px;
+}
+
+.some a:hover {
+    color: #f98f8f;
+}
+
+.fa-facebook {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/***************about**************/
+.about {
+    background-color: #efeded;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+}
+
+.box_about {
+    float: left;
+    width: 50%;
+}
+
+.box_about img {
+    max-width: 350px;
+}
+
+/*
+
+.box_about img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+*/
+
+.box1_about {
+    float: right;
+    width: 50%;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+
+/***************portfolio*******************/
+h3,
+p {
+    font-family: 'Lora', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 15px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+
+.column:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transform: scale(1.02);
+
+}
+}
+
+/* Clear floats after rows */
+.row:after {
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #efeded;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .box_about,
+    .box1_about {
+        width: 100%;
+    }
+
+    .about {
+        height: 540px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .some {
+        left: 70%;
+    }
+
+}
